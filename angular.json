@@ -137,14 +137,12 @@
           },
           "configurations": {
             "production": {
-              "outputHashing": "media",
               "fileReplacements": [
                 {
                   "replace": "projects/app/src/environments/environment.ts",
                   "with": "projects/app/src/environments/environment.prod.ts"
                 }
               ],
-              "sourceMap": false,
               "optimization": true
             }
           }

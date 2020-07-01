@@ -3,6 +3,8 @@
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/server",
+    // module:commonjs needed for lazyloaded modules to work
+    "module": "commonjs",
     "target": "es2016",
     "types": [
       "node"
