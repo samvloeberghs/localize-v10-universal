@@ -71,7 +71,9 @@ function run(): void {
   "locale": "nl",
   "translations": {
     "aboutRoutePath": "over-ons",
-    "aboutRouteLabel": "Ga naar over ons pagina"
+    "aboutRouteLabel": "Ga naar over ons pagina",
+    "contactRoutePath": "contact",
+    "contactRouteLabel": "Ga naar contact pagina"
   }
 }`);
     loadTranslations(res);

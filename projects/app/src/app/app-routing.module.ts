@@ -6,14 +6,19 @@ import { AboutComponent } from './about/about.component';
 export const routes: Routes = [
   {
     path: $localize`:@@aboutRoutePath:about`,
-    component: AboutComponent
-  }
+    component: AboutComponent,
+  },
+  {
+    path: $localize`:@@contactRoutePath:contact`,
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled'
-})],
-  exports: [RouterModule]
+    initialNavigation: 'enabled',
+  })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
